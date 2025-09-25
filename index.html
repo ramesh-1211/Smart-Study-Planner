@@ -16,7 +16,8 @@
       <form id="task-form">
         <input type="text" id="task-title" placeholder="Task title" required />
         <input type="date" id="task-date" required />
-        <select id="task-priority">
+        <select id="task-priority" required>
+          <option value="" disabled selected>Select Priority</option>
           <option value="low">Low Priority</option>
           <option value="medium">Medium Priority</option>
           <option value="high">High Priority</option>
@@ -28,8 +29,14 @@
     <section id="task-list-section">
       <h2>Your Tasks</h2>
       <ul id="task-list"></ul>
+      <div id="progress-container">
+        <label>Progress:</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+        <span id="progress-text">0%</span>
+      </div>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
