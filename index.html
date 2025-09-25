@@ -6,3 +6,30 @@
   <title>Smart Study Planner</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <header>
+    <h1>Smart Study Planner</h1>
+  </header>
+  <main>
+    <section id="task-input">
+      <h2>Add New Task</h2>
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Task title" required />
+        <input type="date" id="task-date" required />
+        <select id="task-priority">
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section id="task-list-section">
+      <h2>Your Tasks</h2>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
