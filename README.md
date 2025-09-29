@@ -21,4 +21,4 @@ A simple and interactive web app to help students organize their study schedules
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/smart-study-planner.git
+   git clone https://github.com/ramesh-1211/Smart-Study-Planner.git
