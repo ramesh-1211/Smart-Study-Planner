@@ -1,1 +1,166 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+  background: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1, h2 {
+  margin: 0 0 0.5rem;
+}
+
+#task-input, #task-list-section {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+input[type="text"], input[type="date"], select {
+  flex: 1 1 150px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #4a90e2;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 0 0 100px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #357ABD;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-left: 8px solid #999;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.task-item.low {
+  border-left-color: #2ecc71;
+}
+
+.task-item.medium {
+  border-left-color: #f1c40f;
+}
+
+.task-item.high {
+  border-left-color: #e74c3c;
+}
+
+.task-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-title {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.task-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.task-actions button:hover {
+  color: #e74c3c;
+}
+
+.completed .task-title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#progress-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  margin: 0.5rem 0;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4a90e2;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  form {
+    flex-direction: column;
+  }
+  
+  button {
+    flex: 1 1 auto;
+  }
+}
