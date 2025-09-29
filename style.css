@@ -132,6 +132,11 @@ button:hover {
   color: #999;
 }
 
+.completed {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
 #progress-container {
   max-width: 600px;
   margin: 0 auto;
@@ -153,6 +158,13 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-color: #4a90e2;
   border-radius: 10px;
+}
+
+.task-empty {
+  text-align: center;
+  color: #888;
+  padding: 1rem;
+  font-style: italic;
 }
 
 @media (max-width: 480px) {
