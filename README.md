@@ -23,13 +23,7 @@ A sleek, responsive, and interactive study planner web app to help users manage 
 * Vanilla JavaScript (ES6+)
 * Browser LocalStorage
 * Web Notifications API
-
----
-
-### 📷 Screenshots
-
-> *(You can add screenshots or a demo GIF here if you want)*
-
+* 
 ---
 
 ### 📂 Project Structure
@@ -37,9 +31,9 @@ A sleek, responsive, and interactive study planner web app to help users manage 
 ```plaintext
 smart-study-planner/
 │
-├── index.html        # Main HTML structure
-├── style.css         # CSS styles
-├── script.js         # JavaScript functionality
+├── index.html       
+├── style.css        
+├── script.js       
 
 ```
 
