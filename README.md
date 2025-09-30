@@ -1,10 +1,4 @@
-Thanks for sharing your full project code! Based on what you've provided, your project is a **Smart Study Planner** — a beautiful and functional web-based to-do list designed to help users manage tasks, track progress, and receive real-time notifications when tasks are due.
-
-Here’s a professional, clean `README.md` file you can use for GitHub:
-
----
-
-## 📘 Smart Study Planner
+📘 Smart Study Planner
 
 A sleek, responsive, and interactive study planner web app to help users manage tasks, prioritize goals, and stay productive. Built with vanilla HTML, CSS, and JavaScript — no frameworks required.
 
