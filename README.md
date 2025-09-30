@@ -23,7 +23,6 @@ A sleek, responsive, and interactive study planner web app to help users manage 
 * Vanilla JavaScript (ES6+)
 * Browser LocalStorage
 * Web Notifications API
-* 
 ---
 
 ### 📂 Project Structure
